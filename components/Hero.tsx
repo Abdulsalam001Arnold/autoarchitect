@@ -25,12 +25,12 @@ export function Hero() {
                     </h1>
 
                     <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-                        We build AI automation systems for 7-figure businesses — so growth doesn’t depend on more hires or tools.
-                        We’ll build you a solution in 7 days that you’ll love — otherwise you don’t pay.
+                        We build complete automation systems that save time, cut costs, and eliminate errors.
+                        Not just scripts—but robust, architectural solutions that integrate your software, backend, and business logic.
                     </p>
 
                     <div className="flex flex-wrap gap-4 text-sm font-medium text-white/80">
-                        {["5-Star Rated", "Money-Back Guarantee", "1,000+ Clients"].map((item, i) => (
+                        {["5-Star Rated", "Money-Back Guarantee", "Systems Driven"].map((item, i) => (
                             <div key={i} className="flex items-center gap-2">
                                 <CheckCircle2 className="w-5 h-5 text-neon-purple" />
                                 <span>{item}</span>

@@ -9,8 +9,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Automatable | AI Automation Agency",
-  description: "We build AI automation systems for 7-figure businesses.",
+  title: "AutoArchitect | AI Automation Agency",
+  description: "I build AI automation systems for businesses.",
 };
 
 export default function RootLayout({

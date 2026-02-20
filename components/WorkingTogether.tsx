@@ -77,24 +77,24 @@ export function WorkingTogether() {
                         <div className="flex gap-6 p-6 rounded-2xl bg-[#0a0a0a] border border-white/5 hover:border-primary/50 transition-colors group">
                             <div className="text-sm font-mono text-muted-foreground pt-1">01</div>
                             <div>
-                                <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Find the win</h4>
-                                <p className="text-muted-foreground">We identify the highest impact automation for your specific workflow.</p>
+                                <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Analyze & Architect</h4>
+                                <p className="text-muted-foreground">We map your entire business logic and design a full-spectrum system.</p>
                             </div>
                         </div>
 
                         <div className="flex gap-6 p-6 rounded-2xl bg-[#0a0a0a] border border-white/5 hover:border-primary/50 transition-colors group">
                             <div className="text-sm font-mono text-muted-foreground pt-1">02</div>
                             <div>
-                                <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Build + Launch</h4>
-                                <p className="text-muted-foreground">We build, test, and deploy the system within 7 days.</p>
+                                <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Build & Connect</h4>
+                                <p className="text-muted-foreground">We connect your software, backend, and build custom interfaces.</p>
                             </div>
                         </div>
 
                         <div className="flex gap-6 p-6 rounded-2xl bg-[#0a0a0a] border border-white/5 hover:border-primary/50 transition-colors group">
                             <div className="text-sm font-mono text-muted-foreground pt-1">03</div>
                             <div>
-                                <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Decide what's next</h4>
-                                <p className="text-muted-foreground">Once you see the results, we scale it to other parts of your business.</p>
+                                <h4 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">Launch & Optimize</h4>
+                                <p className="text-muted-foreground">You get a fully documented, scaling system that evolves with you.</p>
                             </div>
                         </div>
                     </div>

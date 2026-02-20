@@ -1,14 +1,15 @@
 "use client";
 
 import { Check } from "lucide-react";
+import Image from "next/image";
 
 const benefits = [
+    "Turn manual tasks into reliable Systems",
+    "End-to-End Architecture (Backend + Frontend)",
+    "Systems Thinking applied to your specific business logic",
+    "Custom Interface Development for your automation",
+    "We build complete ecosystems, not just scripts",
     "First automation live in 7 days or less",
-    "Built around your existing tools and workflows",
-    "We prioritize what works over what sounds good",
-    "In House Automation Team Without Full Time Costs",
-    "We own maintenance, fixes, and improvements",
-    "You own 100% of everything we build",
     "30-day money back guarantee, no questions"
 ];
 
@@ -70,10 +71,18 @@ export function AllAboutYou() {
                         </div>
 
                         {/* Overlay Text */}
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <p className="text-white/20 font-bold text-3xl transform -rotate-12">
-                                AUTOMATION FLOW
-                            </p>
+                        <div className="absolute inset-0 flex flex-col items-center justify-center">
+                            <img
+                            src={"https://res.cloudinary.com/dqpbdik90/image/upload/v1771364494/Screenshot_366_ecsp8d.png"}
+                            alt="Automation Flow"
+                            className="object-cover"
+                            />
+
+                            <img
+                            src={"https://res.cloudinary.com/dqpbdik90/image/upload/v1771364725/Screenshot_365_wzg7i8.png"}
+                            alt="Automation Flow"
+                            className="object-cover"
+                            />
                         </div>
                     </div>
                 </div>

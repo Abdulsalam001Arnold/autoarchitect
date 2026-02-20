@@ -28,21 +28,11 @@ export function Navbar() {
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                         </svg>
                     </div>
-                    <span className="text-white">Automatable</span>
+                    <span className="text-white">AutoArchitect</span>
                 </Link>
             </div>
 
-            <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-                <Link href="#pricing" className="hover:text-white transition-colors">
-                    Pricing
-                </Link>
-                <Link href="#services" className="hover:text-white transition-colors">
-                    Services
-                </Link>
-                <Link href="#careers" className="hover:text-white transition-colors">
-                    Careers
-                </Link>
-            </div>
+
 
             <div className="flex items-center gap-4">
                 {/* Mobile Menu Trigger could go here */}
