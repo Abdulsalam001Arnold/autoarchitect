@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send, Loader2 } from "lucide-react";
 import Loader from "./ui/loader";
 import { motion, AnimatePresence } from "framer-motion";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface Message {
     role: "user" | "bot";
@@ -118,18 +120,38 @@ export default function ChatbotModal() {
                                         }`}
                                 >
                                     <div
-                                        className={`max-w-[80%] p-3 rounded-2xl text-sm ${msg.role === "user"
+                                        className={`max-w-[80%] p-3 rounded-2xl text-sm overflow-hidden ${msg.role === "user"
                                             ? "bg-blue-600 text-white rounded-br-none"
                                             : "bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 rounded-bl-none"
                                             }`}
                                     >
-                                        {msg.content}
+                                        {msg.role === "user" ? (
+                                            <p className="whitespace-pre-wrap break-words">{msg.content}</p>
+                                        ) : (
+                                            <div className="break-words space-y-2">
+                                                <ReactMarkdown
+                                                    remarkPlugins={[remarkGfm]}
+                                                    components={{
+                                                        a: ({ node, ...props }) => (
+                                                            <a {...props} className="text-blue-600 dark:text-blue-400 hover:underline break-all" target="_blank" rel="noopener noreferrer" />
+                                                        ),
+                                                        p: ({ node, ...props }) => <p {...props} className="whitespace-pre-wrap mb-2 last:mb-0" />,
+                                                        ul: ({ node, ...props }) => <ul {...props} className="list-disc ml-4 mb-2 space-y-1" />,
+                                                        ol: ({ node, ...props }) => <ol {...props} className="list-decimal ml-4 mb-2 space-y-1" />,
+                                                        li: ({ node, ...props }) => <li {...props} className="mb-1" />,
+                                                        strong: ({ node, ...props }) => <strong {...props} className="font-semibold" />,
+                                                    }}
+                                                >
+                                                    {msg.content}
+                                                </ReactMarkdown>
+                                            </div>
+                                        )}
                                     </div>
                                 </div>
                             ))}
                             {isLoading && (
                                 <div className="flex justify-start">
-                                    <Loader/>
+                                    <Loader />
                                 </div>
                             )}
                             <div ref={messagesEndRef} />
